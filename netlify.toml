@@ -24,7 +24,7 @@
 [[plugins]]
   package = "netlify-plugin-submit-sitemap"
 
-	[plugins.inputs]
+  [plugins.inputs]
     baseUrl = "https://doks.netlify.app/"
     sitemapPath = "/sitemap.xml"
     ignorePeriod = 0
