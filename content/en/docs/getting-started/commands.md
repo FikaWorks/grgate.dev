@@ -18,9 +18,10 @@ that match the provided tag. From this list, if all the status check are
 completed and successful and match the list of provided status, then the
 release is published.
 
-```
-Usage:
-  grgate run [OWNER/REPOSITORY] [flags]
+**Usage:**
+
+```bash
+grgate run [OWNER/REPOSITORY] [flags]
 ```
 
 The example below run GRGate against the FikaWorks/my-repo repository, publish
@@ -37,36 +38,35 @@ grgate run FikaWorks/my-repo \
 ## serve
 
 The serve command create 3 HTTP server with the following functionalities:
+
 - 0.0.0.0:8080 listen for git webhook
 - 0.0.0.0:9101 expose Prometheus metrics at `/metrics`
 - 0.0.0.0:8086 expose health probe, liveness: `/live` and readiness: `/ready`
 
-```
-Usage:
-  grgate serve [flags]
+**Usage:**
+
+```bash
+grgate serve [flags]
 ```
 
 ## status
 
 Interact with commit status.
 
-```
-Usage:
-  grgate status [command]
+**Usage:**
 
-Available Commands:
-  get         Get a status attached to a given commit by name
-  list        List statuses attached to a given commit
-  set         Set a status to a given commit
+```bash
+grgate status [command]
 ```
 
 ### status get
 
 Get the status associated to a given commit sha.
 
-```
-Usage:
-  grgate status get [OWNER/REPOSITORY] [flags]
+**Usage:**
+
+```bash
+grgate status get [OWNER/REPOSITORY] [flags]
 ```
 
 The example below get the e2e-happy-flow status associated to the commit sha
@@ -82,9 +82,10 @@ grgate status get my-org/my-repo \
 
 List status associated to a given commit sha.
 
-```
-Usage:
-  grgate status list [OWNER/REPOSITORY] [flags]
+**Usage:**
+
+```bash
+grgate status list [OWNER/REPOSITORY] [flags]
 ```
 
 The example below list all statuses associated to the commit
@@ -99,16 +100,17 @@ grgate status list my-org/my-repo \
 
 Set status and state for a given commit sha.
 
-```
-Usage:
-  grgate status set [OWNER/REPOSITORY] [flags]
+**Usage:**
+
+```bash
+grgate status set [OWNER/REPOSITORY] [flags]
 ```
 
 {{< alert icon="💡" text="The --state flag is only required when interacting with Github repositories and can be omitted when interacting with GitLab repositories" />}}
 
 The example below set the e2e-happy-flow status to completed:
 
-```
+```bash
 grgate status set my-org/my-repo \
   --commit 36a2dabd4cc732ccab2657392d4a1f8db2f9e19e \
   --name e2e-happy-flow \

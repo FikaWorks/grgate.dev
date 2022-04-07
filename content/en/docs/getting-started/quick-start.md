@@ -17,27 +17,34 @@ toc: true
 organisation
 2. Create a `.grgate.yaml` file at the root of your repository with the
 following configuration:
-```yaml
-# automerge releases if the following status succeeded
-statuses:
-  - e2e happy flow
-  - e2e feature A
-```
+
+    ```yaml
+    # automerge releases if the following status succeeded
+    statuses:
+      - e2e happy flow
+      - e2e feature A
+    ```
+
 3. Create a draft release
 4. Start updating commits using the [GRGgate CLI][release-page], for example
 (GitHub):
-```bash
-$ grgate status set your-org/your-repository-name \
-    --commit 93431f42d5a5abc2bb6703fc723b162a9d2f20c3 \
-    --name "e2e happyflow" \
-    --status completed \
-    --state success
-$ grgate status set your-org/your-repository-name \
-    --commit 93431f42d5a5abc2bb6703fc723b162a9d2f20c3 \
-    --name "e2e happyflow" \
-    --status completed \
-    --state success
-```
+
+    ```bash
+    grgate status set your-org/your-repository-name \
+        --commit 93431f42d5a5abc2bb6703fc723b162a9d2f20c3 \
+        --name "e2e happyflow" \
+        --status completed \
+        --state success
+    ```
+
+    ```bash
+    grgate status set your-org/your-repository-name \
+        --commit 93431f42d5a5abc2bb6703fc723b162a9d2f20c3 \
+        --name "e2e happyflow" \
+        --status completed \
+        --state success
+    ```
+
 5. After GRGate process the repo, the draft release will be published!
 
 ## Self hosting GRGate using Helm chart
@@ -46,15 +53,19 @@ A Helm chart is available in the [FikaWorks Helm charts
 repository][helm-charts].
 
 Create a GitHub APP or GitLab token, then update the `values.yaml` file.
+
 ```bash
-$ helm repo add fikaworks https://fikaworks.github.io/helm-charts
-$ helm install --name grgate --values my-values.yaml fikaworks/grgate
+helm repo add fikaworks https://fikaworks.github.io/helm-charts
+```
+
+```bash
+helm install --name grgate --values my-values.yaml fikaworks/grgate
 ```
 
 ## Running GRGate in Docker
 
 ```bash
-$ docker run -ti -p 8080:8080 -p 8086:8086 -p 9101:9101 \
+docker run -ti -p 8080:8080 -p 8086:8086 -p 9101:9101 \
     -v $PWD/config.yaml:/etc/grgate/config.yaml \
     -v $PWD/github.private-key.pem:/etc/grgate/github.private-key.pem \
     fikaworks/grgate
