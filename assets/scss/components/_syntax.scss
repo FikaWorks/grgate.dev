@@ -12,14 +12,16 @@ Based on Ascetic by (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
   color: $body-color;
 }
 
-.hljs-string,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-section,
 .hljs-addition,
 .hljs-attribute,
+.hljs-bullet,
+.hljs-literal,
+.hljs-number,
+.hljs-section,
+.hljs-string,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable,
 .hljs-link {
   color: $pink-500;
 }

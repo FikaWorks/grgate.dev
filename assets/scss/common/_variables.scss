@@ -16,15 +16,15 @@ $yellow:   #ffe000;
 $black:    #1d2d35;
 $beige:    #fbf7f0;
 
-// $red:      #e55235;
-$purple:   #c53636;
+$red:      #c53636;
+$red-100:  #d35f5f;
 $brown:    #aa9c84;
 
 $blue-300: #8ed6fb;
 $pink-100: #b8dae2;
-$pink-500: #99bfc8;
+$pink-500: $red-100;
 
-$primary: $purple;
+$primary: $red;
 
 $color-btn-bg: $pink-500;
 $color-btn-border: darken($pink-500, 5%);
@@ -164,7 +164,7 @@ $alert-color-scale:                 0;
 
 // docsearch
 $dropdown-config: (
-  main-color: $purple,
+  main-color: $red,
   layout-type: normal,
   layout-width: normal,
   layout-alignment: align,
@@ -182,7 +182,7 @@ $dropdown-config: (
   title-color: $black,
   subtitle-color: $black,
   text-color: $black,
-  highlight-color: $purple,
+  highlight-color: $red,
   highlight-opacity: 0.1,
   highlight-type: underline
 );

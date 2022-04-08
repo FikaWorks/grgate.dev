@@ -132,7 +132,7 @@ button#doks-versions {
 
 .header-bar {
   border-top: 4px solid;
-  border-image-source: linear-gradient(90deg, #b8dae2, #b8dae2 50%, #b8dae2);
+  border-image-source: linear-gradient(90deg, $red, $red-100, $red);
   border-image-slice: 1;
 }
 
