@@ -4,40 +4,16 @@
   identifier = "getting-started"
   url = "/docs/getting-started/introduction/"
 
-# [[docs]]
-#   name = "Help"
-#   weight = 60
-#   identifier = "help"
-#   url = "/docs/help/"
-
-# [[docs]]
-#   name = "Lorem"
-#   weight = 70
-#   identifier = "lorem"
-#   url = "/docs/lorem/"
-
-# [[guide]]
-#   name = "Lorem"
-#   weight = 10
-#   identifier = "lorem"
-#   url = "/guide/lorem/"
-
-# [[tutorial]]
-#   name = "Lorem"
-#   weight = 10
-#   identifier = "lorem"
-#   url = "/tutorial/lorem/"
+[[main]]
+  name = "Overview"
+  url = "/docs/overview/concepts"
+  weight = 10
 
 [[main]]
   name = "Docs"
-  url = "/docs/getting-started/"
+  url = "/docs/getting-started/quick-start/"
 # url = "/docs/1.0/prologue/introduction/"
-  weight = 10
-
-# [[main]]
-#   name = "Tutorial"
-#   url = "/tutorial/lorem/ipsum/"
-#   weight = 15
+  weight = 20
 
 # [[main]]
 #   name = "Blog"
