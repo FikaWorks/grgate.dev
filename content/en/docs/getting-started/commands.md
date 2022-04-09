@@ -1,12 +1,12 @@
 ---
-title: "Commands"
-description: "GRGate comes with commands for common tasks."
-lead: "GRGate comes with commands for common tasks."
+title: Commands
+description: GRGate comes with commands for common tasks
+lead: GRGate comes with commands for common tasks.
 draft: false
 images: []
 menu:
   docs:
-    parent: "getting-started"
+    parent: getting-started
 weight: 130
 toc: true
 ---

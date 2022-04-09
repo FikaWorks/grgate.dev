@@ -1,12 +1,11 @@
 ---
-title: "Repository config"
-description: "GRGate repository config reference"
-lead: ""
+title: Repository config
+description: GRGate repository config reference
 draft: false
 images: []
 menu:
   docs:
-    parent: "config-reference"
+    parent: config-reference
 weight: 630
 toc: true
 ---
@@ -17,7 +16,7 @@ repository, GRGate will read it before processing the repository.
 
 ```yaml
 # only process releases with tag matching a regular expression pattern
-tagRegexp: v1.0.0-beta-\d*
+tagRegexp: "v1.0.0-beta-\d*"
 
 # automerge release if the following status succeeded
 statuses:

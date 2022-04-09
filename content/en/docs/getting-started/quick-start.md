@@ -1,17 +1,21 @@
 ---
-title: "Quick Start"
-description: "Quick start guide to get started with GRGate"
-lead: "Quick start guide to get started with GRGate"
+title: Quick Start
+description: GRGate quick start guide
+lead: Quick start guide to get started with GRGate.
 draft: false
 images: []
 menu:
   docs:
-    parent: "getting-started"
+    parent: getting-started
 weight: 110
 toc: true
 ---
 
-## Quick start using the GRGate GitHub App
+There is multiple options to install GRGate in a git repository. The preferred
+option being to self host GRGate yourself but you can also decide to install
+GRGate from the GitHub marketplace.
+
+## Using the GRGate GitHub App
 
 1. Install the [GRGate GitHub App][github-market-place] to your repository or
 organisation
@@ -71,9 +75,16 @@ docker run -ti -p 8080:8080 -p 8086:8086 -p 9101:9101 \
     fikaworks/grgate
 ```
 
-By default, the webserver is exposed at `http://0.0.0.0:8080`. Prometheus is
-exposed at `http://0.0.0.0:9101/metrics` and the liveness/readiness probes are
-exposed at `http://0.0.0.0:8086/ready` and `http://0.0.0.0:8086/live`.
+## Exposed endpoints
+
+By default GRGate expose the following endpoints:
+
+| Address                       | Description                                 |
+|-------------------------------|---------------------------------------------|
+| `http://0.0.0.0:8080`         | Webserver which listen to webhooks          |
+| `http://0.0.0.0:9101/metrics` | Prometheus metrics                          |
+| `http://0.0.0.0:8086/ready`   | Readiness probe                             |
+| `http://0.0.0.0:8086/live`    | Liveness probe                              |
 
 <!-- page links -->
 [helm-charts]: https://github.com/FikaWorks/helm-charts

@@ -1,6 +1,6 @@
 ---
-title: "Privacy Policy"
-description: "GRGate GitHub App privacy policy"
+title: Privacy Policy
+description: GRGate GitHub App privacy policy
 draft: false
 images: []
 ---

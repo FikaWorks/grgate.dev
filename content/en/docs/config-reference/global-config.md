@@ -1,12 +1,11 @@
 ---
-title: "Global config"
-description: "GRGate global config reference"
-lead: ""
+title: Global config
+description: GRGate global config reference
 draft: false
 images: []
 menu:
   docs:
-    parent: "config-reference"
+    parent: config-reference
 weight: 630
 toc: true
 ---
@@ -22,7 +21,7 @@ globals:
 
   # filter release by tag, the tag associated to the draft/unpublished releases
   # must match the regular expression defined by tagRegexp, default: .*
-  tagRegexp: .*
+  tagRegexp: ".*"
 
   # list of statuses, default: []
   statuses:
