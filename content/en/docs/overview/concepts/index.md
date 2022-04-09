@@ -36,7 +36,6 @@ their state. When all status succeeded, the release is published.
 
 ![GRGate release notes](grgate-release-notes.png "GRGate release notes")
 
-
 ## Issue dashboard
 
 GRGate create an issue in the repository which is used as dashboard. It
