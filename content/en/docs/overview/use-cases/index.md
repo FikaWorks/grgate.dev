@@ -13,6 +13,8 @@ weight: 300
 
 ## Using GRGate with Docker labels and Kubernetes
 
+{{< alert icon="💡" text="Checkout this <a href=\"https://github.com/FikaWorks/grgate/tree/main/example\" target=\"_blank\">GRGate example</a> for more details about the implementation." />}}
+
 Docker labels can be used to gather information about running container and
 which repository and commit sha is attached to them. With this information,
 it is possible to provide back the state of the end-to-end tests via commit

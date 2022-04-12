@@ -28,6 +28,22 @@ GRGate publish the GitHub release.
 
 ![GRGate Overview](grgate-overview.png "GRGate overview")
 
+## GRGate integration in a GitOps environment
+
+Below is another example of using GRGate in a GitOps environment. Change to
+master trigger a CI/CD job which automatically generate a draft release and
+build a container. From there, if all containers pass a set of end-to-end or
+integration tests, the release get published which trigger a deployment of the
+containers to production.
+
+![GRGate in your GitOps environment](grgate-kubernetes.png "GRGate in your
+GitOps environment")
+
+Checkout this [GRGate example][GRGate example] for more details about the
+implementation.
+
+[GRGate example]: https://github.com/FikaWorks/grgate/tree/main/example
+
 ## Append commit statuses to release notes
 
 GRGate can update existing release notes with the current state of the release.
