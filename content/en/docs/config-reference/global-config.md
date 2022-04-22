@@ -1,6 +1,7 @@
 ---
 title: Global config
 description: GRGate global config reference
+lead: GRGate global config reference
 draft: false
 images: []
 menu:
@@ -23,7 +24,7 @@ globals:
   # must match the regular expression defined by tagRegexp, default: .*
   tagRegexp: ".*"
 
-  # list of statuses, default: []
+  # list of statuses required to get releases merged, default: []
   statuses:
     - e2e happy flow
 

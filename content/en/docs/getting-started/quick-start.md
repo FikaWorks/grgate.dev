@@ -44,7 +44,7 @@ following configuration:
     ```bash
     grgate status set your-org/your-repository-name \
         --commit 93431f42d5a5abc2bb6703fc723b162a9d2f20c3 \
-        --name "e2e happyflow" \
+        --name "e2e feature A" \
         --status completed \
         --state success
     ```
@@ -67,6 +67,11 @@ helm install --name grgate --values my-values.yaml fikaworks/grgate
 ```
 
 ## Running GRGate in Docker
+
+The GRGate server can be run in Docker. The following example mount a global
+config file and a GitHub private key. You can then send GitHub webhook events
+to `http://localhost:8080/github/webhook`, GRGate will then process the
+corresponding repositories.
 
 ```bash
 docker run -ti -p 8080:8080 -p 8086:8086 -p 9101:9101 \
